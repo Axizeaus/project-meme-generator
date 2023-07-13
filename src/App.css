@@ -1,0 +1,23 @@
+body{
+  font-family: 'Inter', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  background: 
+  radial-gradient(circle at 0%, #000 10%, #222 40%,#555  65%, #777 80%);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+.header--logo{
+  padding: 10px;
+  height: 100%;
+  margin-right: auto;
+}
+
+.header--text{
+  align-self: center;
+  padding: 10px;
+}
