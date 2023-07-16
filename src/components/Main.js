@@ -8,10 +8,13 @@ export default function Main() {
     randomImage: "http://i.imgflip.com/1bij.jpg",
   });
 
+  const [allMemeImages, setAllMemeImages] = useState(memeData)
+
   function getMeme() {
     const memesArray = memeData.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    setMeme({ ...meme, randomImage: memesArray[randomNumber].url });
+    const url = memesArray[randomNumber].url
+    setMeme({ ...meme, randomImage: url });
   }
 
   return (
