@@ -1,5 +1,14 @@
 body {
   font-family: "Inter", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  background: radial-gradient(
+    circle at 0%,
+    #000 10%,
+    #222 40%,
+    #555 65%,
+    #777 80%
+  );
 }
 
 .header {
@@ -10,7 +19,7 @@ body {
     #555 65%,
     #777 80%
   );
-  height: 20vh;
+  height: 10vh;
   display: flex;
   align-items: center;
 }
@@ -33,12 +42,11 @@ body {
   grid-template-areas:
     "input1 input2"
     "button button";
-  height: 20vh;
+  height: 15dvh;
   column-gap: 20px;
   row-gap: 20px;
   padding: 10px;
   font-family: "Inter", sans-serif;
-
 }
 
 .form--input1 {
@@ -73,10 +81,52 @@ body {
 }
 
 .meme--image {
-  width: 100%;
+  width: 50%;
   max-width: 100%;
   border-radius: 3px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   display: block;
+  border: 2px solid black;
+}
+
+.meme {
+    position: relative;
+}
+
+.meme--image {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
 }
